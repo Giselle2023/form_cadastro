@@ -1,11 +1,14 @@
 @import "variables";
 @import "resert";
+@import "mixin";
 
-
-h1{
-    margin: 1.4rem 0;
-    font-size: 22px;
+.title_content{
+    @include title();
+    h1{
+        font-size: $font_title;
+    }
 }
+
 label{
     font-size: 13px;
 }
@@ -14,20 +17,17 @@ body{
     height: 100vh;
     box-sizing: border-box;
     background-color: var(--bg);
-}
-.container{
-    max-width: 870px;
-    margin: auto;
+    display: flex;
     align-items: center;
-   display: flex;
-   justify-content: space-between;
-   
+    justify-content: center;
 }
+
 .form_content{
     width: 380px;
-     box-sizing: border-box;
+    box-sizing: border-box;
 
 }
+
 .form{
     width: 100%;
     display: flex;
@@ -35,44 +35,30 @@ body{
     gap: .5rem;
     margin: auto;
 
+    .btn{
+        @include btns();
+        border-radius: 0;
+        &:hover{
+            @include btn_hover();
+        }
+    }
+
 }
 
 .form input{
-    padding: .5rem 1rem;
-    box-shadow: 1px 1px 6px rgba(11, 11, 11, 0.08);
-    background: var(--bg);
-    border: 2px solid rgba(255, 199, 14, 0.44);
-    border-radius: 12px;
+    @include input();
 }
 
-#btn{
-    cursor: pointer;
-    text-align: center;
-    background-color: rgb(255, 199, 14);
-    margin: 1rem 0;
-    padding: .5rem;
-}
 
-.img{
-    background-image: url('sign_up.svg');  
-     background-size: 390px;
-     width: 420px;
-     height: 470px;
-     background-repeat: no-repeat;
-     background-position-y: 194px;
-     animation: ease-in-out 1s animation ;
-}
 
-.login_option{
+
+
+.login_option {
     display: flex;
     justify-content: space-between;
-}
-
-@keyframes animation{
-    from{
-        transform: translateX(385px);
+    a{
+        @include login_option();
+        
     }
-    to{
-        transform: translateX(0);
-    }
+  
 }

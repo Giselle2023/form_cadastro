@@ -1,22 +1,17 @@
 @import "variables";
 @import "resert";
+@import 'mixin';
 
-.title {
-    margin: .8rem 0;
-    font-size: 18px;
-    color: $gray;
-}
 
 label {
     font-size: 13px;
 }
 
 .title_content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: .4rem;
-  
+    @include title();
+    h1{
+        font-size: $font_title;
+    }
 }
 
 body {
@@ -55,26 +50,19 @@ body {
 }
 
 .input {
-    padding: .6rem 1rem;
-    background: $gray_light;
-    border: none;
-    border-radius: 9px;
-    outline: none;
+  @include input();
 }
 
 .input-date{
     padding: .6rem 1.5rem;
     border: none;
-    border-bottom:2px solid $gray_light;
+    border-bottom:1px solid rgba(112, 112, 112, 0.192);
     outline: none;
+    margin-bottom: .5rem;
 }
 
-#btn {
-    cursor: pointer;
-    text-align: center;
-    background-color: $yellow;
-    margin: 1rem 0;
-    padding: .5rem;
+.btn{
+    @include btns();
 
     &:hover{
         box-shadow: 5px 3px 1px $pink;
@@ -91,9 +79,13 @@ body {
     background-repeat: no-repeat;
     background-position-y: 194px;
     animation: ease-in-out 1.5s animation;
+    
 }
 
-
+.login_option a{
+    @include login_option();
+    
+}
 
 @keyframes animation {
     from {

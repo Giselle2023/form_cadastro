@@ -57,8 +57,13 @@
                 <label for="name">Confirmar senha:</label>
                 <input type="text" name="confirm_password" class="input">
 
-                <input type="submit" name="submit" value="Enviar" id="btn">
+                <input type="submit" name="submit" value="Enviar" class="btn">
             </form>
+
+            <span class="login_option">
+                <a href="./login.php">Já sou cadastro(a)</a>
+            </span>
+
         </div>
         <div class="img">
 

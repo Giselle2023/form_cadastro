@@ -1,0 +1,36 @@
+@mixin title{
+    margin: .8rem 0;
+    font-size: 18px;
+    color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+}
+
+@mixin login_option(){
+    font-size: 13px;
+    color: black;
+}
+
+@mixin input(){
+    padding: .6rem 1rem;
+    background: $gray_light;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+}
+
+@mixin btns(){
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(255, 199, 14);
+    margin: 1rem 0;
+    padding: .5rem;
+    border: 2px solid black;
+}
+
+@mixin btn_hover{
+    box-shadow: 2px 3px 1px $pink;
+    transition: all .6s;
+}

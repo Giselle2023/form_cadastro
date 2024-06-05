@@ -4,18 +4,8 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-button {
-  cursor: pointer;
-}
-
 .icon {
   font-size: 22px;
-}
-
-.title {
-  margin: 0.8rem 0;
-  font-size: 18px;
-  color: #3d3d3d;
 }
 
 label {
@@ -23,10 +13,16 @@ label {
 }
 
 .title_content {
+  margin: 0.8rem 0;
+  font-size: 18px;
+  color: #3d3d3d;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.7rem;
+}
+.title_content h1 {
+  font-size: 18px;
 }
 
 body {
@@ -71,18 +67,20 @@ body {
 .input-date {
   padding: 0.6rem 1.5rem;
   border: none;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.192);
   outline: none;
+  margin-bottom: 0.5rem;
 }
 
-#btn {
+.btn {
   cursor: pointer;
   text-align: center;
   background-color: rgb(255, 199, 14);
   margin: 1rem 0;
   padding: 0.5rem;
+  border: 2px solid black;
 }
-#btn:hover {
+.btn:hover {
   box-shadow: 5px 3px 1px #e73f3f;
   transition: all 0.6s;
 }
@@ -95,6 +93,11 @@ body {
   background-repeat: no-repeat;
   background-position-y: 194px;
   animation: ease-in-out 1.5s animation;
+}
+
+.login_option a {
+  font-size: 13px;
+  color: black;
 }
 
 @keyframes animation {
