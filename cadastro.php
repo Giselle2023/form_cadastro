@@ -1,17 +1,25 @@
 <?php
+   
     if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $date = $_POST['date'];
-        $tel = $_POST['tel'];
-        $password = $_POST['password'];
-        echo $name . $email . $date;
+        
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $date = $_POST['date'];
+            $tel = $_POST['tel'];
+            $password = $_POST['password'];
+           
     }
+
+    // add readMe 
+    // create a layout the home page
+    // add new img from login 
+    // create a database
+    // add responsive part 
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +27,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./src/scss/cadastro.css">
     <title>Cadastro</title>
 </head>
 
@@ -28,23 +37,26 @@
 
         <div class="form_content">
 
-            <h1>Cadastrar</h1>
+            <span class="title_content">
+                <h1 class="title">Cadastrar</h1>
+                <i class="material-symbols-outlined icon">potted_plant</i>
+            </span>
 
-            <form action="index.php" method="$_POST" class="form">
+            <form action="main.php" method="post" class="form">
 
                 <label for="name">Nome:</label>
-                <input type="text" name="name">
+                <input type="text" name="name" class="input">
                 <label for="name">Email:</label>
-                <input type="text" name="email">
+                <input type="text" name="email" class="input">
                 <label for="name">Data de Nascimento:</label>
-                <input type="text" name="date">
+                <input type="date" name="date" class="input-date" >
                 <label for="name">Telefone:</label>
-                <input type="text" name="tel">
+                <input type="text" name="tel" class="input">
                 <label for="name">Senha:</label>
-                <input type="text" name="password">
+                <input type="text" name="password" class="input">
                 <label for="name">Confirmar senha:</label>
-                <input type="text" name="confirm_password">
-                
+                <input type="text" name="confirm_password" class="input">
+
                 <input type="submit" name="submit" value="Enviar" id="btn">
             </form>
         </div>
