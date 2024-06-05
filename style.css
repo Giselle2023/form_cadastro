@@ -47,14 +47,24 @@ body{
     text-align: center;
     background-color: rgb(255, 199, 14);
     margin: 1rem 0;
+    padding: .5rem;
 }
 
 .img{
-    background-image: url('sign_img.png');
-     
-     background-size: 450px;
+    background-image: url('sign_img.png');  
+     background-size: 500px;
      width: 420px;
      height: 470px;
      background-repeat: no-repeat;
      background-position-y: 194px;
+     animation: ease-in-out .8s animation ;
+}
+
+@keyframes animation{
+    from{
+        transform: translateX(385px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
