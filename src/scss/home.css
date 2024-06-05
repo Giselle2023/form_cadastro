@@ -6,4 +6,103 @@
 
 .icon {
   font-size: 22px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 199, 14);
+  box-sizing: border-box;
+  padding: 1rem 7rem;
+}
+.header .logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+.header button {
+  cursor: pointer;
+  background-color: #e73f3f;
+  padding: 0.5rem 1.8rem;
+}
+.header button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.title_section {
+  margin-bottom: 3rem;
+}
+
+.h {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.container_main {
+  box-sizing: border-box;
+  min-width: 920px;
+  padding: 3rem 2rem;
+}
+
+.container_book {
+  box-shadow: 1px 4px 4px rgba(73, 73, 73, 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 140px;
+  height: 230px;
+  background-color: white;
+  padding: 1rem;
+}
+.container_book .livro {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 82%;
+  margin: auto;
+  overflow: hidden;
+}
+.container_book .livro img {
+  margin: auto;
+  max-width: 140px;
+}
+.container_book .livro img:hover {
+  transform: scale(1.1);
+}
+.container_book .description_book {
+  display: flex;
+  justify-content: space-between;
+}
+.container_book .description_book .pontuacao_container {
+  display: flex;
+}
+
+aside div {
+  position: absolute;
+  margin-top: 120px;
+  right: 100px;
+}
+aside div span {
+  background-color: #e73f3f;
+  padding: 1rem 2.5rem;
+  border: 2px solid black;
+}
+aside div span a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
 }/*# sourceMappingURL=home.css.map */

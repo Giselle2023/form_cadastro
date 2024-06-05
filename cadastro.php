@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
    
     if(isset($_POST['submit'])){
         
@@ -16,7 +16,7 @@
     // create a database
     // add responsive part 
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -42,7 +42,7 @@
                 <i class="material-symbols-outlined icon">potted_plant</i>
             </span>
 
-            <form action="main.php" method="post" class="form">
+            <form action="./home.php" class="form">
 
                 <label for="name">Nome:</label>
                 <input type="text" name="name" class="input">

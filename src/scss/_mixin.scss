@@ -34,3 +34,9 @@
     box-shadow: 2px 3px 1px $pink;
     transition: all .6s;
 }
+
+@mixin display($value){
+    display: flex;
+    justify-content: $value;
+    align-items: center;
+}

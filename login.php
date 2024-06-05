@@ -21,14 +21,14 @@
                 <i class="material-symbols-outlined icon">star</i>
             </span>
 
-            <form action="index.php" method="$_POST" class="form">
+            <form action="./home.php"  class="form">
 
                 <label for="name">Email:</label>
                 <input type="text" name="email">
                 <label for="name">Senha:</label>
                 <input type="text" name="password">
 
-                <input type="submit" name="submit" value="Enviar" class="btn">
+                <input type="submit" name="submit" value="Entrar" class="btn">
 
             </form>
 
