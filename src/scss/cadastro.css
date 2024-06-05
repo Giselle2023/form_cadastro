@@ -104,4 +104,17 @@ body {
   to {
     transform: translateX(0);
   }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .container .img {
+    display: none;
+  }
+  .container .form_content {
+    padding: 1.4rem;
+    animation: none;
+  }
 }/*# sourceMappingURL=cadastro.css.map */
