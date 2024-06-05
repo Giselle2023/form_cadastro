@@ -14,12 +14,14 @@ label{
 }
 body{
     width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     background-color: #fffdf8;
 }
 .container{
     max-width: 870px;
     margin: auto;
+    align-items: center;
    display: flex;
    justify-content: space-between;
    
@@ -34,6 +36,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin: auto;
 
 }
 
@@ -59,6 +62,11 @@ body{
      background-repeat: no-repeat;
      background-position-y: 194px;
      animation: ease-in-out 1s animation ;
+}
+
+.login_option{
+    display: flex;
+    justify-content: space-between;
 }
 
 @keyframes animation{

@@ -25,9 +25,13 @@
 
 <body>
     <div class="container">
+
         <div class="form_content">
+
             <h1>Cadastrar</h1>
+
             <form action="index.php" method="$_POST" class="form">
+
                 <label for="name">Nome:</label>
                 <input type="text" name="name">
                 <label for="name">Email:</label>
@@ -40,6 +44,7 @@
                 <input type="text" name="password">
                 <label for="name">Confirmar senha:</label>
                 <input type="text" name="confirm_password">
+                
                 <input type="submit" name="submit" value="Enviar" id="btn">
             </form>
         </div>
