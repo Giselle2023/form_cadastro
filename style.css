@@ -4,6 +4,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     -webkit-text-size-adjust: inherit;
 }
+
 h1{
     margin: 2rem 0;
     font-size: 22px;
@@ -14,10 +15,10 @@ label{
 body{
     width: 100vw;
     box-sizing: border-box;
-
+    background-color: #fffdf8;
 }
 .container{
-    max-width: 820px;
+    max-width: 870px;
     margin: auto;
    display: flex;
    justify-content: space-between;
@@ -51,13 +52,13 @@ body{
 }
 
 .img{
-    background-image: url('sign_img.png');  
-     background-size: 500px;
+    background-image: url('sign_up.svg');  
+     background-size: 390px;
      width: 420px;
      height: 470px;
      background-repeat: no-repeat;
      background-position-y: 194px;
-     animation: ease-in-out .8s animation ;
+     animation: ease-in-out 1s animation ;
 }
 
 @keyframes animation{

@@ -1,3 +1,15 @@
+<?php
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $date = $_POST['date'];
+        $tel = $_POST['tel'];
+        $password = $_POST['password'];
+        echo $name . $email . $date;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +27,7 @@
     <div class="container">
         <div class="form_content">
             <h1>Cadastrar</h1>
-            <form action="" class="form">
+            <form action="index.php" method="$_POST" class="form">
                 <label for="name">Nome:</label>
                 <input type="text" name="name">
                 <label for="name">Email:</label>
@@ -28,7 +40,7 @@
                 <input type="text" name="password">
                 <label for="name">Confirmar senha:</label>
                 <input type="text" name="confirm_password">
-                <input type="text" name="submit" value="Enviar" id="btn">
+                <input type="submit" name="submit" value="Enviar" id="btn">
             </form>
         </div>
         <div class="img">
